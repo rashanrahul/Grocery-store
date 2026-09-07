@@ -12,14 +12,17 @@ const DB = {
   ],
 
   defaultProducts: [
-    { id: 1,  categoryId: 1, name: "Tomatoes",       nameSi: "තක්කාලි",       price: 120,  unit: "1 kg",   stock: 50,  image: "https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=300&q=80" },
+    { id: 1,  categoryId: 2, name: "Yogurt(Highland)",       nameSi: "යෝගට්",       price: 80,  unit: "1",   stock: 50,  image: "https://highland-outlet.shophere.lk/wp-content/uploads/2021/09/hIGHLAND-YOGURT-1.jpg" },
     { id: 2,  categoryId: 1, name: "Carrots",        nameSi: "කැරට්",          price: 90,   unit: "500 g",  stock: 40,  image: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=300&q=80" },
-    { id: 3,  categoryId: 1, name: "Bananas",        nameSi: "කෙසෙල්",         price: 60,   unit: "1 dozen",stock: 30,  image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&q=80" },
-    { id: 4,  categoryId: 1, name: "Spinach",        nameSi: "නිවිති",          price: 45,   unit: "250 g",  stock: 25,  image: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=300&q=80" },
+    { id: 3,  categoryId: 1, name: "Bananas",        nameSi: "කෙසෙල්",         price: 60,   unit: "1 dozen", stock: 30,  image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&q=80" },
     { id: 5,  categoryId: 2, name: "Fresh Milk",     nameSi: "නැවුම් කිරි",    price: 180,  unit: "1 L",    stock: 20,  image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=300&q=80" },
-    { id: 6,  categoryId: 2, name: "Eggs",           nameSi: "බිත්තර",          price: 220,  unit: "10 pcs", stock: 60,  image: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=300&q=80" },
-    { id: 7,  categoryId: 2, name: "Yogurt",         nameSi: "යෝගට්",           price: 95,   unit: "200 g",  stock: 15,  image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300&q=80" },
-    { id: 8,  categoryId: 3, name: "Basmati Rice",   nameSi: "බාස්මතී සහල්",   price: 350,  unit: "1 kg",   stock: 100, image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&q=80" },
+    { id: 6,  categoryId: 2, name: "Eggs",           nameSi: "බිත්තර",          price: 36,  unit: "1", stock: 260,  image: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=300&q=80" },
+    { id: 7,  categoryId: 2, name: "Yogurt( Ambewela)",         nameSi: "යෝගට්",           price: 80,   unit: "1",  stock: 50,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5uzPr2uMiVrEZFNXKLgocr04vbYcEeAbxifgFLDQ6kis32BOzZa7Wrcb8&s=10" },
+    { id: 8,  categoryId: 3, name: "Ambul Rice",   nameSi: "අම්බුල් සහල්",   price: 290,  unit: "1 kg",   stock: 100, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSG3GnuNMzRJ0wjMfIxoS6G_rE66LItswoalugwaHoZ_j_LnoAr5Kk5yj&s=10" },
+    { id: 9,  categoryId: 3, name: "Red Rice",       nameSi: "රතු සහල්",        price: 280,  unit: "1 kg",   stock: 80,  image: "https://images.unsplash.com/photo-1536304993881-ff86e0c9b7b5?w=300&q=80" },
+    { id: 9,  categoryId: 3, name: "Red Rice",       nameSi: "රතු සහල්",        price: 280,  unit: "1 kg",   stock: 80,  image: "https://images.unsplash.com/photo-1536304993881-ff86e0c9b7b5?w=300&q=80" },
+    { id: 9,  categoryId: 3, name: "Red Rice",       nameSi: "රතු සහල්",        price: 280,  unit: "1 kg",   stock: 80,  image: "https://images.unsplash.com/photo-1536304993881-ff86e0c9b7b5?w=300&q=80" },
+
     { id: 9,  categoryId: 3, name: "Red Rice",       nameSi: "රතු සහල්",        price: 280,  unit: "1 kg",   stock: 80,  image: "https://images.unsplash.com/photo-1536304993881-ff86e0c9b7b5?w=300&q=80" },
     { id: 10, categoryId: 3, name: "Oats",           nameSi: "ඕට්ස්",            price: 195,  unit: "500 g",  stock: 35,  image: "https://images.unsplash.com/photo-1614961233913-a5113a4a34ed?w=300&q=80" },
     { id: 11, categoryId: 4, name: "Orange Juice",   nameSi: "දොඩම් යුෂ",       price: 250,  unit: "1 L",    stock: 25,  image: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=300&q=80" },
