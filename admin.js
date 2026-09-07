@@ -359,12 +359,12 @@ function saveSettings() {
   const openDays = [...document.querySelectorAll('#setOpenDays input:checked')].map(c => parseInt(c.value));
   DB.saveSettings({
     name:      document.getElementById('setName').value.trim()      || 'Sunil Store',
-    tagline:   document.getElementById('setTagline').value.trim()   || 'Fresh Groceries Delivered',
+    tagline:   document.getElementById('setTagline').value.trim()   || 'Fresh Choices, Happy Homes.',
     phone:     document.getElementById('setPhone').value.trim()     || '0775163271',
-    address:   document.getElementById('setAddress').value.trim()   || '',
-    mapUrl:    document.getElementById('setMapUrl').value.trim()    || '#',
-    openTime:  document.getElementById('setOpenTime').value         || '07:00',
-    closeTime: document.getElementById('setCloseTime').value        || '20:00',
+    address:   document.getElementById('setAddress').value.trim()   || 'Udalamatta, Galle',
+    mapUrl:    document.getElementById('setMapUrl').value.trim()    || 'https://www.google.com/maps/place/Sunil+Store/@6.1829866,80.2948983,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae1650053d15c7b:0xb8600c6f5bb91ff!8m2!3d6.1829866!4d80.2948983!16s%2Fg%2F11xh5tx4py?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D',
+    openTime:  document.getElementById('setOpenTime').value         || '06:00',
+    closeTime: document.getElementById('setCloseTime').value        || '21:00',
     openDays,
   });
   showToast('Settings saved! Store updated.');
