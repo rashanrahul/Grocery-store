@@ -427,7 +427,7 @@ function showToast(msg, error=false) {
   toastTimer = setTimeout(()=>el.className='', 2800);
 }
 
-// ── Init ──────────────────────────────────────────────────────────────────────
+// ── Init ─────────────────────────────────────────────────────────────────────
 function initAdmin() {
   renderDashboard();
   updatePendingBadge();
