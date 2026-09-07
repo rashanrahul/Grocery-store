@@ -64,12 +64,12 @@ const DB = {
   getSettings() {
     return this.get('ss_settings', {
       name:     'Sunil Store',
-      tagline:  'Fresh Groceries Delivered',
+      tagline:  'Fresh Choices, Happy Homes.',
       phone:    '0775163271',
-      address:  'No. 45, Main Street, Colombo 10',
-      mapUrl:   'https://maps.google.com/?q=Colombo',
-      openTime: '07:00',
-      closeTime:'20:00',
+      address:  'Udalamatta, Galle',
+      mapUrl:   'https://www.google.com/maps/place/Sunil+Store/@6.1829866,80.2948983,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae1650053d15c7b:0xb8600c6f5bb91ff!8m2!3d6.1829866!4d80.2948983!16s%2Fg%2F11xh5tx4py?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D',
+      openTime: '06:00',
+      closeTime:'21:00',
       openDays: [0,1,2,3,4,5,6],
     });
   },
