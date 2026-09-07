@@ -275,7 +275,7 @@ function openDetail(id) {
   const p   = DB.getProducts().find(x => x.id === id);
   if (!p) return;
   const cat = DB.getCategories().find(c => c.id === p.categoryId);
-  document.getElementById('detailTitle').textContent = lang==='si' ? p.nameSi : p.name;
+  document.getElementById('detailTitle').textContent = lang==='si' ? p.nameSi: p.name;
   document.getElementById('detailBody').innerHTML = `
     ${productImg(p,'detail-img','detail-img-ph')}
     <div class="detail-price">Rs. ${p.price.toFixed(2)}</div>
