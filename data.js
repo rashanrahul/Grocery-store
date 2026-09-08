@@ -6,7 +6,6 @@ const DB = {
     { id: 1,  name: "Rice & Grains",           nameSi: "සහල් සහ ධාන්‍ය වර්ග",        icon: "🌾" },
     { id: 2,  name: "Dhal & Pulses",           nameSi: "පරිප්පු සහ රනිල කුලය",       icon: "🫘" },
     { id: 3,  name: "Spices",                  nameSi: "කුළු බඩු",                    icon: "🌶️" },
-    { id: 4,  name: "Fruits & Vegetables",     nameSi: "පළතුරු සහ එළවළු",            icon: "🥦" },
     { id: 5,  name: "Dairy & Eggs",            nameSi: "කිරි සහ බිත්තර",             icon: "🥛" },
     { id: 6,  name: "Beverages",               nameSi: "පාන වර්ග",                    icon: "🧃" },
     { id: 7,  name: "Biscuits & Snacks",       nameSi: "බිස්කට් සහ කෙටි ආහාර",       icon: "🍪" },
@@ -33,22 +32,26 @@ const DB = {
     { id: 9,  categoryId: 2,  name: "Red Lentils",       nameSi: "රතු පරිප්පු",        price: 140, unit: "500 g",   stock: 60,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh4D3BbY5X-nk6GNft6l1gSAn8Wx2wPku6OFGZlUzlAYiFwh-vUXnrbnk&s=10" },
     { id: 10,  categoryId: 2,  name: "Cup Lentils",       nameSi: "කප් පරිප්පු ",        price: 200, unit: "500 g",   stock: 60,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh4D3BbY5X-nk6GNft6l1gSAn8Wx2wPku6OFGZlUzlAYiFwh-vUXnrbnk&s=10" },
     { id: 11,  categoryId: 2,  name: "Chickpeas lentils",       nameSi: "කඩල පරිප්පු ",        price: 130, unit: "500 g",   stock: 60,  image: "https://s-mart.shophere.lk/wp-content/uploads/2020/04/kadala-parippu.jpg" },
-    { id: 12,  categoryId: 2,  name: "White sugar",       nameSi: "සුදු සීනි",        price: 120, unit: "500 g",   stock: 60,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4tmJz4Nne-z7-V8CdJ-SDEbJ4kdx_eo4Vq3dDoqJLdmL06im86s-CWBXS&s=10" },
-    { id: 13,  categoryId: 2,  name: "Brown sugar",       nameSi: "දුඹුරු සීනි",        price: 135, unit: "500 g",   stock: 60,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevmk68p2D9NqCWQHXHig4gIzAdinqMLsMdIXRtu8VmA&s=10" },
+    { id: 13,  categoryId: 2,  name: "Bread flour",       nameSi: "පාන් පිටි",        price: 100, unit: "500 g",   stock: 60,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOfaU7atBpglrINbZN9x8j5FyHZECGueQsW7bgUaf9XNubqPtHzYwwF7Q&s=10" },
     { id: 14,  categoryId: 2,  name: "Chickpeas",         nameSi: "කඩල",                price: 250, unit: "500 g",   stock: 45,  image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?w=300&q=80" },
     { id: 15,  categoryId: 2,  name: "Green beans",         nameSi: "මුං ඇට ",                price: 90, unit: "100 g",   stock: 45,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmcumGnjbMZsZMwhYwQLkbroTZ3Z5QO8Unsm4ybPM4B94aIH7a0-vMsc&s=10" },
-    { id: 16,  categoryId: 2,  name: "Chickpeas",         nameSi: "කඩල",                price: 180, unit: "500 g",   stock: 45,  image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?w=300&q=80" },
+    { id: 16,  categoryId: 2,  name: "Chickpeas",         nameSi: "රටඉදි ",                price: 100, unit: "100 g",   stock: 45,  image: "https://www.shutterstock.com/image-photo/semidry-dates-date-palm-fruits-260nw-2559304275.jpg" },
+    { id: 16,  categoryId: 2,  name: "Peanut",         nameSi: "රටකජු ",                price: 90, unit: "100 g",   stock: 45,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTUNSzopMJl8OVbJbggnc8w2PL02z7cm1T4lmehQyFk6O9iz-ZfNvmeErh&s=10" },
+    { id: 16,  categoryId: 2,  name: "Raisins",         nameSi: "වියළි මිදි",                price: 100, unit: "50 g",   stock: 45,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ7Ngd3plJFdMo_mw-eC5yFfGi-kxva_aRz7M9ZG3NK0giMa8shIYZDb6J&s=10" },
+    { id: 16,  categoryId: 2,  name: "Sago",         nameSi: "සව්",                price: 65, unit: "100 g",   stock: 45,  image: "https://thumbs.dreamstime.com/b/white-sago-pearls-nnwhite-wooden-spoon-close-up-51175863.jpg" },
+    { id: 16,  categoryId: 2,  name: "Sugar Crystal",         nameSi: "සූකිරි",                price: 60, unit: "100 g",   stock: 45,  image: "https://media.istockphoto.com/id/165820985/photo/heap-of-salt.jpg?s=612x612&w=0&k=20&c=a1cU5JdbWrzJPK7f7PVLWX0Of-3-v-5_1QzHzwmg1ro=" },
 
-    { id: 5,  categoryId: 2,  name: "Chickpeas",         nameSi: "කඩල",                price: 180, unit: "500 g",   stock: 45,  image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?w=300&q=80" },
     // Spices
-    { id: 6,  categoryId: 3,  name: "Turmeric Powder",   nameSi: "කහ කුඩු",            price: 95,  unit: "100 g",   stock: 70,  image: "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=300&q=80" },
-    { id: 7,  categoryId: 3,  name: "Chilli Powder",     nameSi: "මිරිස් කුඩු",        price: 110, unit: "100 g",   stock: 65,  image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=300&q=80" },
+    { id: 6,  categoryId: 3,  name: "Turmeric Powder",   nameSi: "කහ කුඩු",            price: 40,  unit: "10 g",   stock: 70,  image: "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=300&q=80" },
+    { id: 7,  categoryId: 3,  name: "Chilli Powder Wijaya",     nameSi: "මිරිස් කුඩු",        price: 95, unit: "50 g",   stock: 65,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwKbGmcZUGzjHl54QlM5qpIFyBZkOMd3muEYtVdVGOcFBl0pQbWIGxAqxU&s=10" },
+    { id: 7,  categoryId: 3,  name: "Chilli peppers Wijaya",     nameSi: "මිරිස් කැලි ",        price: 95, unit: "50 g",   stock: 65,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwKbGmcZUGzjHl54QlM5qpIFyBZkOMd3muEYtVdVGOcFBl0pQbWIGxAqxU&s=10" },
+    { id: 7,  categoryId: 3,  name: "Chilli Powder Wijaya",     nameSi: "මිරිස් කුඩු",        price: 140, unit: "50 g",   stock: 65,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwKbGmcZUGzjHl54QlM5qpIFyBZkOMd3muEYtVdVGOcFBl0pQbWIGxAqxU&s=10" },
+    { id: 7,  categoryId: 3,  name: "Chilli Powder Wijaya",     nameSi: "මිරිස් කුඩු",        price: 140, unit: "50 g",   stock: 65,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwKbGmcZUGzjHl54QlM5qpIFyBZkOMd3muEYtVdVGOcFBl0pQbWIGxAqxU&s=10" },
+    { id: 7,  categoryId: 3,  name: "Chilli Powder Wijaya",     nameSi: "මිරිස් කුඩු",        price: 140, unit: "50 g",   stock: 65,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwKbGmcZUGzjHl54QlM5qpIFyBZkOMd3muEYtVdVGOcFBl0pQbWIGxAqxU&s=10" },
+
+    { id: 7,  categoryId: 3,  name: "Chilli Powder Wijaya",     nameSi: "මිරිස් කුඩු",        price: 140, unit: "50 g",   stock: 65,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwKbGmcZUGzjHl54QlM5qpIFyBZkOMd3muEYtVdVGOcFBl0pQbWIGxAqxU&s=10" },
     { id: 8,  categoryId: 3,  name: "Cinnamon",          nameSi: "කුරුඳු",             price: 150, unit: "50 g",    stock: 40,  image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=300&q=80" },
-    // Fruits & Vegetables
-    { id: 9,  categoryId: 4,  name: "Tomatoes",          nameSi: "තක්කාලි",            price: 120, unit: "1 kg",    stock: 50,  image: "https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=300&q=80" },
-    { id: 10, categoryId: 4,  name: "Carrots",           nameSi: "කැරට්",              price: 90,  unit: "500 g",   stock: 40,  image: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=300&q=80" },
-    { id: 11, categoryId: 4,  name: "Bananas",           nameSi: "කෙසෙල්",             price: 60,  unit: "1 dozen", stock: 30,  image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&q=80" },
-    { id: 12, categoryId: 4,  name: "Spinach",           nameSi: "නිවිති",              price: 45,  unit: "250 g",   stock: 25,  image: "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=300&q=80" },
+    
     // Dairy & Eggs
     { id: 13, categoryId: 5,  name: "Fresh Milk",        nameSi: "නැවුම් කිරි",        price: 180, unit: "1 L",     stock: 20,  image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=300&q=80" },
     { id: 14, categoryId: 5,  name: "Eggs",              nameSi: "බිත්තර",             price: 220, unit: "10 pcs",  stock: 60,  image: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=300&q=80" },
@@ -67,7 +70,8 @@ const DB = {
     { id: 23, categoryId: 9,  name: "Tomato Paste",      nameSi: "තක්කාලි පේස්ට්",     price: 95,  unit: "200 g",   stock: 40,  image: "https://images.unsplash.com/photo-1546548970-71785318a17b?w=300&q=80" },
     // Cooking Essentials
     { id: 24, categoryId: 10, name: "Coconut Oil",       nameSi: "පොල් තෙල්",           price: 420, unit: "500 ml",  stock: 30,  image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=300&q=80" },
-    { id: 25, categoryId: 10, name: "Sugar",             nameSi: "සීනි",                price: 160, unit: "1 kg",    stock: 90,  image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=300&q=80" },
+    { id: 13,  categoryId: 2,  name: "Brown sugar",       nameSi: "දුඹුරු සීනි",        price: 135, unit: "500 g",   stock: 60,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevmk68p2D9NqCWQHXHig4gIzAdinqMLsMdIXRtu8VmA&s=10" },
+    { id: 12,  categoryId: 10,  name: "White sugar",       nameSi: "සුදු සීනි",        price: 120, unit: "500 g",   stock: 60,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4tmJz4Nne-z7-V8CdJ-SDEbJ4kdx_eo4Vq3dDoqJLdmL06im86s-CWBXS&s=10" },
     { id: 26, categoryId: 10, name: "Salt",              nameSi: "ලුණු",                price: 60,  unit: "500 g",   stock: 100, image: "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?w=300&q=80" },
     // Household & Cleaning
     { id: 27, categoryId: 11, name: "Dish Soap",         nameSi: "බඳුන් සබන්",          price: 145, unit: "500 ml",  stock: 30,  image: "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=300&q=80" },
