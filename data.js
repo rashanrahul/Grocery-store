@@ -21,11 +21,24 @@ const DB = {
 
   defaultProducts: [
      // Rice & Grains
-    { id: 1,  categoryId: 1,  name: "Basmati Rice",     nameSi: "බාස්මතී සහල්",      price: 350, unit: "1 kg",    stock: 100, image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&q=80" },
-    { id: 2,  categoryId: 1,  name: "Red Rice",          nameSi: "රතු සහල්",           price: 280, unit: "1 kg",    stock: 80,  image: "https://images.unsplash.com/photo-1536304993881-ff86e0c9b7b5?w=300&q=80" },
-    { id: 3,  categoryId: 1,  name: "Oats",              nameSi: "ඕට්ස්",              price: 195, unit: "500 g",   stock: 35,  image: "https://images.unsplash.com/photo-1614961233913-a5113a4a34ed?w=300&q=80" },
+    { id: 1,  categoryId: 1,  name: "Ambul Rice",     nameSi: "අම්බුල් සහල්",      price: 290, unit: "1 kg",    stock: 100, image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&q=80" },
+    { id: 2,  categoryId: 1,  name: "less bran Red Rice",          nameSi: "නිවුඩු අඩු රතු සහල්",           price: 165, unit: "1 kg",    stock: 150,  image: "https://cdn.prod.website-files.com/5f8690e2f4f017863f10bd7b/684f83128704eac18e51a091_red%20ricee.png" },
+    { id: 3,  categoryId: 1,  name: "More bran Red Rice",          nameSi: "නිවුඩු වැඩි රතු සහල්",           price: 185, unit: "1 kg",    stock: 150,  image: "https://cdn.prod.website-files.com/5f8690e2f4f017863f10bd7b/684f83128704eac18e51a091_red%20ricee.png" },
+    { id: 4,  categoryId: 1,  name: "White Rice",          nameSi: "රට සුදු සහල්",           price: 180, unit: "1 kg",    stock: 0,  image: "https://img.magnific.com/free-psd/closeup-wooden-bowl-filled-with-cooked-white-rice_191095-79998.jpg?semt=ais_hybrid&w=740&q=80" },
+    { id: 5,  categoryId: 1,  name: "lankan white Rice",          nameSi: "ලංකා සුදු සහල්",           price: 185, unit: "1 kg",    stock: 150,  image: "https://img.magnific.com/free-psd/closeup-wooden-bowl-filled-with-cooked-white-rice_191095-79998.jpg?semt=ais_hybrid&w=740&q=80" },
+    { id: 6,  categoryId: 1,  name: "Pony Samba",          nameSi: "පොන්නි සම්බා",           price: 250, unit: "1 kg",    stock: 150,  image: "https://5.imimg.com/data5/ANDROID/Default/2022/6/EM/ES/ZD/5158094/product-jpeg-500x500.jpg" },
+    { id: 7,  categoryId: 1,  name: "Nadu Rice",          nameSi: "නාඩු සහල්",           price: 210, unit: "1 kg",    stock: 150,  image: "https://5.imimg.com/data5/ANDROID/Default/2022/6/EM/ES/ZD/5158094/product-jpeg-500x500.jpg" },
+    { id: 8,  categoryId: 1,  name: "Village red rice",              nameSi: "ගමේ රතු සහල්",              price: 185, unit: "1kg",   stock: 0,  image: "https://cdn.prod.website-files.com/5f8690e2f4f017863f10bd7b/684f83128704eac18e51a091_red%20ricee.png" },
     // Dhal & Pulses
-    { id: 4,  categoryId: 2,  name: "Red Lentils",       nameSi: "රතු පරිප්පු",        price: 220, unit: "500 g",   stock: 60,  image: "https://images.unsplash.com/photo-1585996160652-b2e5e8e5e5e5?w=300&q=80" },
+    { id: 9,  categoryId: 2,  name: "Red Lentils",       nameSi: "රතු පරිප්පු",        price: 140, unit: "500 g",   stock: 60,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh4D3BbY5X-nk6GNft6l1gSAn8Wx2wPku6OFGZlUzlAYiFwh-vUXnrbnk&s=10" },
+    { id: 10,  categoryId: 2,  name: "Cup Lentils",       nameSi: "කප් පරිප්පු ",        price: 200, unit: "500 g",   stock: 60,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh4D3BbY5X-nk6GNft6l1gSAn8Wx2wPku6OFGZlUzlAYiFwh-vUXnrbnk&s=10" },
+    { id: 11,  categoryId: 2,  name: "Chickpeas lentils",       nameSi: "කඩල පරිප්පු ",        price: 130, unit: "500 g",   stock: 60,  image: "https://s-mart.shophere.lk/wp-content/uploads/2020/04/kadala-parippu.jpg" },
+    { id: 12,  categoryId: 2,  name: "White sugar",       nameSi: "සුදු සීනි",        price: 120, unit: "500 g",   stock: 60,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4tmJz4Nne-z7-V8CdJ-SDEbJ4kdx_eo4Vq3dDoqJLdmL06im86s-CWBXS&s=10" },
+    { id: 13,  categoryId: 2,  name: "Brown sugar",       nameSi: "දුඹුරු සීනි",        price: 135, unit: "500 g",   stock: 60,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevmk68p2D9NqCWQHXHig4gIzAdinqMLsMdIXRtu8VmA&s=10" },
+    { id: 14,  categoryId: 2,  name: "Chickpeas",         nameSi: "කඩල",                price: 250, unit: "500 g",   stock: 45,  image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?w=300&q=80" },
+    { id: 15,  categoryId: 2,  name: "Green beans",         nameSi: "මුං ඇට ",                price: 90, unit: "100 g",   stock: 45,  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxmcumGnjbMZsZMwhYwQLkbroTZ3Z5QO8Unsm4ybPM4B94aIH7a0-vMsc&s=10" },
+    { id: 16,  categoryId: 2,  name: "Chickpeas",         nameSi: "කඩල",                price: 180, unit: "500 g",   stock: 45,  image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?w=300&q=80" },
+
     { id: 5,  categoryId: 2,  name: "Chickpeas",         nameSi: "කඩල",                price: 180, unit: "500 g",   stock: 45,  image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?w=300&q=80" },
     // Spices
     { id: 6,  categoryId: 3,  name: "Turmeric Powder",   nameSi: "කහ කුඩු",            price: 95,  unit: "100 g",   stock: 70,  image: "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=300&q=80" },
