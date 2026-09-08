@@ -68,7 +68,7 @@ const DB = {
     // Frozen Foods
     { id: 33, categoryId: 14, name: "Frozen Fish",       nameSi: "ශීතකළ මාළු",          price: 550, unit: "500 g",   stock: 18,  image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=300&q=80" },
     { id: 34, categoryId: 14, name: "Frozen Vegetables", nameSi: "ශීතකළ එළවළු",         price: 290, unit: "400 g",   stock: 22,  image: "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=300&q=80" },
-]
+],
   // ── helpers ────────────────────────────────────────────────────────────────
   get(key, fallback) {
     try { return JSON.parse(localStorage.getItem(key)) ?? fallback; }
