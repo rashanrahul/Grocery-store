@@ -236,7 +236,7 @@ function renderStoreInfo() {
       <span>${isOpen ? 'Open Now' : 'Closed'}</span>
     </div>
     <div class="info-pill">🕐 ${fmt(s.openTime||'06:00')} – ${fmt(s.closeTime||'21:00')}</div>
-    ${s.address ? `<div class="info-pill"><a href="${s.mapUrl||'https://www.google.com/maps/place/Sunil+Store/@6.1925063,80.3027518,15z/data=!4m6!3m5!1s0x3ae1650053d15c7b:0xb8600c6f5bb91ff!8m2!3d6.1829866!4d80.2948983!16s%2Fg%2F11xh5tx4py?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D'}" target="_blank">📍 ${s.address}</a></div>` : ''}
+    ${s.address ? `<div class="info-pill"><a href="${s.mapUrl||'https://www.google.com/maps/place/Sunil+Store/@6.1829866,80.2948983,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae1650053d15c7b:0xb8600c6f5bb91ff!8m2!3d6.1829866!4d80.2948983!16s%2Fg%2F11xh5tx4py?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D'}" target="_blank">📍 ${s.address}</a></div>` : ''}
     <div class="info-pill"><a href="tel:${s.phone}">📞 ${s.phone}</a></div>`;
 
   // footer
@@ -249,7 +249,7 @@ function renderStoreInfo() {
   const fa = document.getElementById('footerAddress');
   if (fa) fa.textContent = s.address || '';
   const fl = document.getElementById('footerMapLink');
-  if (fl) fl.href = s.mapUrl || 'https://www.google.com/maps/place/Sunil+Store/@6.1925063,80.3027518,15z/data=!4m6!3m5!1s0x3ae1650053d15c7b:0xb8600c6f5bb91ff!8m2!3d6.1829866!4d80.2948983!16s%2Fg%2F11xh5tx4py?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D';
+  if (fl) fl.href = s.mapUrl || 'https://www.google.com/maps/place/Sunil+Store/@6.1829866,80.2948983,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae1650053d15c7b:0xb8600c6f5bb91ff!8m2!3d6.1829866!4d80.2948983!16s%2Fg%2F11xh5tx4py?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D';
 }
 
 // ── Search ────────────────────────────────────────────────────────────────────
